@@ -1,0 +1,129 @@
+/* ===== 1️⃣ CSS Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f4f6f8;
+  padding: 2rem;
+}
+
+/* ===== 2️⃣ Library Layout ===== */
+#library {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* ===== 3️⃣ Book Card ===== */
+.book-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 220px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== 4️⃣ Book Text ===== */
+.book-card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* ===== 5️⃣ Status Badges ===== */
+.read {
+  color: white;
+  background-color: #4caf50; /* green */
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.not-read {
+  color: white;
+  background-color: #f44336; /* red */
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  width: fit-content;
+}
+
+/* ===== 6️⃣ Buttons ===== */
+.book-card button {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.book-card button:hover {
+  opacity: 0.9;
+}
+
+/* Optional button colors */
+.book-card button:first-of-type {
+  background: #1976d2; /* Toggle Read button */
+  color: white;
+}
+
+.book-card button:last-of-type {
+  background: #f44336; /* Remove button */
+  color: white;
+}
+
+/* ===== 7️⃣ Form ===== */
+#bookForm {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 6px;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#bookForm input {
+  padding: 0.4rem;
+}
+
+#bookForm button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#bookForm button:hover {
+  opacity: 0.9;
+}
+
+/* ===== 8️⃣ "New Book" Button ===== */
+#newBookBtn {
+  padding: 0.5rem 1rem;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+#newBookBtn:hover {
+  opacity: 0.9;
+}
